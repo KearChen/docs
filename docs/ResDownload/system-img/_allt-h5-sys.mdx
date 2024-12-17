@@ -1,0 +1,69 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import Button from "@mui/material/Button";
+
+# {props.name}系统下载
+
+:::warning
+
+SD卡注意事项:
+
+* 容量必须不小于`16GB`或不大于`128G`TF卡
+* TF卡的传输速度必须为`class10`级或`class10`级以上，建议使用闪迪等品牌的TF卡
+
+:::
+
+:::danger 须知
+
+* 因服务器问题请不要随意更新系统或者更新klipper
+* 请下载FLY OS系统，原版Armbian使用难度过大不建议安装
+
+:::
+
+:::info 重要提示
+
+* 请注意下载好的系统是需要解压，而不是直接改后缀或者直接烧录！！！！
+* 不解压后烧录是无法启动！！！
+
+:::
+
+## 系统下载
+
+<Tabs>
+  <TabItem value="flyos" label="FLYOS(基于Armbian)" default>
+
+:::tip
+
+* 系统预装klipper、moonraker、mainsail、fulidd、klipper-screen、Crowsmest、共振补偿插件 numpy与FLY-Tools，无需换源等复杂的操作，小白更容易上手（需要购买TF卡或者M2WE）
+
+:::
+
+<Button variant="contained" disableElevation href="https://cdn.mellow.klipper.cn/IMG/Beta/FlyOS_h5_3.3.4_fix_20240928.img.xz">下载系统镜像</Button>
+
+<Tabs>
+<TabItem value="fly" label="普通用户" default>
+<p>默认账号：`fly`</p>
+<p>默认密码：`mellow`</p>
+  </TabItem>
+  <TabItem value="root" label="root用户" default>
+<p>默认账号：`root`</p>
+<p>默认密码：`mellow`</p>
+  </TabItem>
+</Tabs>
+  </TabItem>
+<TabItem value="armbian" label="原版Armbian">
+
+:::warning
+
+* 此系统为原版 Armbian，不包含任何服务，需要自行安装
+* 此系统不支持 M2WE 启动
+
+:::
+
+<Button variant="contained" color="success" disableElevation href="https://cdn.mellow.klipper.cn/IMG/Release/Armbian_22.08.0-trunk_Flypiv1_bullseye_current_5.15.52.img.xz">下载系统镜像</Button>
+
+<p>默认账号：`root`</p>
+<p>默认密码：`mellow`</p>
+
+  </TabItem>
+</Tabs>
